@@ -1,0 +1,91 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  /* ==========================================================================
+     1. Color Tokens (색상)
+     ========================================================================== */
+  --color-primary: #3b82f6; /* 주요 브랜드 컬러 및 핵심 액션 버튼 강조용 */
+  --color-primary-hover: #2563eb; /* primary 버튼 호버 시 스타일 */
+  --color-secondary: #10b981; /* 보조 포인트 컬러 및 성공/완료 상태 표시용 */
+  --color-secondary-hover: #059669; /* secondary 버튼 호버 시 스타일 */
+  --color-background: #ffffff; /* 전체 애플리케이션의 최하단 배경색 */
+  --color-surface: #f9fafb; /* 카드, 모달, 패널 등 컨테이너 표면 배경색 */
+  --color-text-primary: #1f2937; /* 기본 본문 및 헤딩 텍스트의 주 타이포그래피 색상 */
+  --color-text-secondary: #4b5563; /* 보조 본문 및 라벨 텍스트 색상 */
+  --color-text-muted: #9ca3af; /* 부문자, 캡션, 힌트용 보조 텍스트 색상 */
+  --color-border: #e5e7eb; /* 구분선, 입력창, 카드 테두리에 적용되는 경계선 색상 */
+
+  /* ==========================================================================
+     2. Typography Tokens (타이포그래피)
+     ========================================================================== */
+  /* Font Family */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 글꼴 패밀리 상속 및 기본 타이포그래피 서체 */
+  --font-family-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; /* 코드 및 테크니컬 데이터용 모노스페이스 서체 */
+
+  /* Font Size (폰트 크기) */
+  --font-size-xs: 0.75rem;   /* 12px - Captions, Badges */
+  --font-size-sm: 0.875rem;  /* 14px - Helper text, Secondary buttons */
+  --font-size-md: 1rem;      /* 16px - Base body text, Form inputs */
+  --font-size-lg: 1.125rem;  /* 18px - Subtitles, Large buttons */
+  --font-size-xl: 1.25rem;   /* 20px - Card titles, H3 */
+  --font-size-2xl: 1.5rem;   /* 24px - Section headers, H2 */
+  --font-size-3xl: 1.875rem; /* 30px - Page titles, H1 */
+
+  /* Font Weight (굵기) */
+  --font-weight-regular: 400; /* 기본 텍스트 굵기 */
+  --font-weight-medium: 500; /* 미디엄 강조 굵기 */
+  --font-weight-semibold: 600; /* 서브헤딩 강조 굵기 */
+  --font-weight-bold: 700; /* 타이틀 및 강력한 강조 굵기 */
+
+  /* Line Height (행간) */
+  --line-height-tight: 1.25; /* 타이트한 헤딩용 행간 */
+  --line-height-normal: 1.5; /* 기본 본문용 표준 행간 */
+  --line-height-relaxed: 1.75; /* 가독성을 위한 여유로운 행간 */
+
+  /* ==========================================================================
+     3. Spacing Tokens (간격)
+     ========================================================================== */
+  --spacing-3xs: 2px; /* 극소 간격 표준 */
+  --spacing-2xs: 4px; /* 초소 간격 표준 */
+  --spacing-xs: 6px; /* 좁은 간격 표준 */
+  --spacing-sm: 8px; /* 기본 소 간격 */
+  --spacing-md: 16px; /* 기본 중 간격 */
+  --spacing-lg: 24px; /* 기본 대 간격 */
+  --spacing-xl: 32px; /* 기본 특대 간격 */
+  --spacing-2xl: 48px; /* 극대 간격 표준 */
+
+  /* ==========================================================================
+     4. Border Radius & Elevation (모서리 곡률 및 그림자)
+     ========================================================================== */
+  --border-radius-sm: 4px; /* 소형 컴포넌트 둥글기 */
+  --border-radius-md: 8px; /* 기본 카드/버튼 둥글기 */
+  --border-radius-lg: 12px; /* 대형 모달/패널 둥글기 */
+  --border-radius-full: 9999px; /* 완전한 원형/알약형 둥글기 */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* 은은한 플랫 그림자 */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* 기본 입체감 그림자 */
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 강조 모달/팝오버 그림자 */
+}
+
+/* ==========================================================================
+   5. Dark Mode Overrides (다크모드 변경값)
+   ========================================================================== */
+.dark {
+  /* 다크모드에서 값이 변경되는 토큰만 정의합니다. */
+  --color-primary: #60a5fa;
+  --color-primary-hover: #3b82f6;
+  --color-secondary: #34d399;
+  --color-secondary-hover: #10b981;
+  --color-background: #111827;
+  --color-surface: #1f2937;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-muted: #6b7280;
+  --color-border: #374151;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
