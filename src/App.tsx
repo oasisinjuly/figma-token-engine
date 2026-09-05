@@ -215,7 +215,7 @@ export default function App() {
             <div>
               <h1 className="font-bold leading-tight" style={{ fontSize: 'var(--font-size-2xl)' }}>Figma Token Design System Guidebook</h1>
               <p style={{ color: dynamicMutedText, fontSize: 'var(--font-size-xs)' }}>
-                웹 애플리케이션 디자인 시스템 컴포넌트 라이브러리
+                피그마 디자인 토큰 기반 실시간 UI 컴포넌트 라이브러리
               </p>
             </div>
           </div>
@@ -670,7 +670,7 @@ export default function App() {
               <div className="border space-y-3 p-4 transition-colors duration-200" style={{ backgroundColor: dynamicSurface, borderColor: dynamicBorder, boxShadow: 'var(--shadow-sm)', borderRadius: 'var(--border-radius-lg)' }}>
                 <span className="inline-block px-2 py-0.5 font-mono text-[10px] border font-bold" style={{ backgroundColor: dynamicBg, borderColor: dynamicBorder, borderRadius: 'var(--border-radius-sm)' }}>Accordion</span>
                 <div className="border text-xs" style={{ borderColor: dynamicBorder, borderRadius: 'var(--border-radius-md)' }}>
-                  <button onClick={() => setIsAccordionOpen(!isAccordionOpen)} className="w-full p-3 flex justify-between items-center font-bold border-b cursor-pointer transition-all" style={{ backgroundColor: dynamicSurface, borderColor: dynamicBorder, color: dynamicText }}>
+                  <button onClick={() => setIsAccordionOpen(!isAccordionOpen)} className="w-full p-3 flex justify-between items-center font-bold border-b cursor-pointer transition-all" style={{  borderColor: dynamicBorder, color: dynamicText }}>
                     <span>아코디언 토글 (클릭)</span><span>{isAccordionOpen ? '▲' : '▼'}</span>
                   </button>
                   {isAccordionOpen && <div className="p-3" style={{ color: dynamicText, fontSize: 'var(--font-size-xs)' }}>펼쳐진 상세 정보 컨텐츠입니다.</div>}
