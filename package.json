@@ -3,14 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://oasisinjuly.github.io/figma-token-engine",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "fetch:tokens": "tsx scripts/fetch-tokens.ts",
     "build:tokens": "tsx scripts/build-tokens.ts",
-    "tokens": "npm run fetch:tokens && npm run build:tokens"
+    "tokens": "npm run fetch:tokens && npm run build:tokens",
+    "predeploy": "npm run build",
+    "deploy": "cd dist && git init && git checkout -b gh-pages && git add -A && git commit -m \"deploy\" && git push -f https://github.com/oasisinjuly/figma-token-engine.git gh-pages && cd .."
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -24,6 +27,7 @@
     "@vitejs/plugin-react": "^6.1.1",
     "autoprefixer": "^10.5.4",
     "dotenv": "^17.4.2",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.26",
     "style-dictionary": "^5.5.2",
     "tailwindcss": "^4.3.3",

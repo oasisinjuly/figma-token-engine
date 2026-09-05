@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // 👈 Tailwind v4 전용 Vite 플러그인
   ],
+  base: '/figma-token-engine/',
 });
